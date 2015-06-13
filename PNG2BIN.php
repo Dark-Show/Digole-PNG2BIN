@@ -9,7 +9,7 @@ for($y=0;$y<64;$y=$y+8){
                 $data.="0";
             }else{
                 $data.="1";
-                }
+            }
         }
     fputs($a,pack('H*', str_pad(base_convert($data, 2, 16), 2, "0", STR_PAD_LEFT)));
     }
